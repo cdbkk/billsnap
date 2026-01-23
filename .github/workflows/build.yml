@@ -1,0 +1,47 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Expo CLI
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Android APK (development)
+        run: eas build --platform android --profile development --non-interactive
+
+      - name: Get build URL
+        id: build
+        run: |
+          BUILD_URL=$(eas build:list --platform android --limit 1 --json | jq -r ".[0].artifacts.buildUrl")
+          echo "build_url=$BUILD_URL" >> $GITHUB_OUTPUT
+
+      - name: Download APK artifact
+        run: |
+          curl -L -o app-development.apk "${{ steps.build.outputs.build_url }}"
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-apk-development
+          path: app-development.apk
+          retention-days: 30

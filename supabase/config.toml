@@ -1,0 +1,55 @@
+# Supabase Configuration for BillSnap
+# https://supabase.com/docs/guides/cli/config
+
+[api]
+# Port to use for the API URL
+port = 54321
+# Schemas to expose in your API
+schemas = ["public", "graphql_public"]
+# Extra schemas to add to the search_path
+extra_search_path = ["public", "extensions"]
+# Max number of rows to return from a single request
+max_rows = 1000
+
+[db]
+# Port to use for the local database URL
+port = 54322
+# The database major version to use
+major_version = 15
+
+[studio]
+# Port to use for Supabase Studio
+port = 54323
+
+[inbucket]
+# Port for email testing interface
+port = 54324
+
+[storage]
+# Maximum file size allowed (in bytes)
+file_size_limit = "50MiB"
+
+[auth]
+# The base URL for the auth server
+site_url = "http://localhost:3000"
+# A list of allowed redirect URLs for authentication
+additional_redirect_urls = ["http://localhost:3000"]
+# JWT expiry in seconds
+jwt_expiry = 3600
+# Enable email signup
+enable_signup = true
+
+[auth.email]
+# Enable email confirmations
+enable_confirmations = false
+# Email template path
+# template_path = "./supabase/templates"
+
+[auth.external.google]
+enabled = false
+# client_id = ""
+# secret = ""
+# redirect_uri = ""
+
+[analytics]
+enabled = false

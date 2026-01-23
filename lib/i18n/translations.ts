@@ -1,0 +1,493 @@
+// BillSnap Translations - English & Thai
+
+export type Language = 'en' | 'th';
+
+export const translations = {
+  en: {
+    // Common
+    app_name: 'BillSnap',
+    save: 'Save',
+    cancel: 'Cancel',
+    delete: 'Delete',
+    edit: 'Edit',
+    done: 'Done',
+    loading: 'Loading...',
+    error: 'Error',
+    success: 'Success',
+    ok: 'OK',
+
+    // Tabs
+    tab_home: 'Home',
+    tab_create: 'Create',
+    tab_items: 'Items',
+    tab_history: 'History',
+    tab_stats: 'Stats',
+    tab_settings: 'Settings',
+
+    // Items Management Screen
+    items_management: 'Manage Items',
+    search_items: 'Search items...',
+    add_item: 'Add Item',
+    edit_item: 'Edit Item',
+    add_new_item: 'Add New Item',
+    item_name_required: 'Item name *',
+    select_category: 'Select category',
+    no_items_found: 'No items found',
+    no_items_in_category: 'No items in this category',
+    start_adding_items: 'Start adding items with the + button below',
+    confirm_delete: 'Confirm Delete',
+    confirm_delete_item: 'Delete "{name}"?',
+    error_enter_item_name: 'Please enter item name',
+    all_categories: 'All',
+
+    // Create Receipt Screen
+    create_receipt: 'Create Receipt',
+    select_items: 'Select Items',
+    receipt_items: 'Receipt Items',
+    additional_details: 'Additional Details',
+    customer_name_optional: 'Customer name (optional)',
+    include_vat_7: 'Include VAT 7%',
+    no_vat: 'No VAT',
+    subtotal: 'Subtotal',
+    grand_total: 'Grand Total',
+    generate_receipt: 'Generate Receipt',
+    clear_all_confirm: 'Clear all items?',
+    no_items_alert: 'No items',
+    add_items_first: 'Please add items before generating receipt',
+
+    // Categories (for display)
+    category_clothing: 'Clothing',
+    category_bags: 'Bags',
+    category_accessories: 'Accessories',
+    category_other: 'Other',
+
+    // Additional items screen keys
+    error_enter_price: 'Please enter price',
+    try_different_search: 'Try a different search term',
+    item_name_placeholder: 'Enter item name',
+    price_baht_required: 'Price (฿) *',
+    category: 'Category',
+    summary: 'Summary',
+
+    // Search & Empty States
+    no_search_results: 'No Results Found',
+
+    // New Receipt Screen (legacy - keeping for compatibility)
+    new_receipt: 'New Receipt',
+    customer_name: 'Customer Name',
+    customer_name_placeholder: 'Optional',
+    item_name: 'Item Name',
+    price: 'Price',
+    quantity: 'Quantity',
+    vat: 'VAT 7%',
+    total: 'Total',
+    include_vat: 'Include VAT',
+    clear_all: 'Clear All',
+    no_items: 'No items added yet',
+    add_first_item: 'Tap + to add your first item',
+
+    // Customer display
+    guest_customer: 'Receipt',
+
+    // Dashboard
+    greeting: 'Hello! 👋',
+    today_sales: "Today's Sales",
+    orders: 'orders',
+    monthly_overview: 'Monthly Overview',
+    view_report: 'View Report',
+    total_revenue: 'Total Revenue',
+    receipt_count: 'Receipts',
+    avg_per_receipt: 'Avg/Receipt',
+    create_new_receipt: 'New Receipt',
+    manage_items: 'Manage Items',
+    recent_receipts: 'Recent Receipts',
+    view_all: 'View All',
+    create_first_receipt_hint: 'Press the button below to create your first receipt',
+    pro_features_short: 'Unlimited receipts • Advanced reports • Inventory',
+    status_paid: 'Paid',
+    status_pending: 'Pending',
+    status_refunded: 'Refunded',
+    no_data_this_month: 'No data this month yet',
+    no_items_yet: 'No items yet',
+    add_items_hint: 'Add items from the Items tab to get started',
+
+    // Receipt History
+    receipt_history: 'Receipt History',
+    today: 'Today',
+    yesterday: 'Yesterday',
+    this_week: 'This Week',
+    this_month: 'This Month',
+    no_receipts: 'No receipts yet',
+    start_creating: 'Start creating receipts to see them here',
+    search_receipts: 'Search receipts...',
+    daily_sales: 'Daily Sales',
+    receipts: 'Receipts',
+
+    // Receipt Preview
+    receipt_preview: 'Receipt Preview',
+    share_to_line: 'Share to LINE',
+    save_to_photos: 'Save to Photos',
+    remove_watermark: 'Remove Watermark',
+    upgrade_pro_watermark: 'Upgrade to Pro for ฿99/mo to remove the watermark and customize your logo.',
+    get_pro: 'Get Pro',
+    thank_you: 'Thank you for shopping with us!',
+    scan_to_pay: 'Scan to pay directly',
+
+    // Settings
+    settings: 'Settings',
+    shop_owner: 'Shop Owner',
+    member_since: 'Member since',
+    upgrade_to_pro: 'Upgrade to Pro',
+    most_popular: 'MOST POPULAR',
+    pro_feature_1: 'Unlimited Receipts',
+    pro_feature_2: 'Advanced Reports & Analytics',
+    pro_feature_3: 'Inventory Management',
+    unlock_pro: 'Unlock Pro Features',
+    shop_management: 'Shop Management',
+    edit_shop_info: 'Edit Shop Info',
+    payment_promptpay: 'Payment (PromptPay QR)',
+    account_preferences: 'Account & Preferences',
+    subscription_status: 'Subscription Status',
+    free_plan: 'Free Plan',
+    language: 'Language',
+    help_support: 'Help & Support',
+    sign_out: 'Sign Out',
+    sign_out_confirm: 'Are you sure you want to sign out?',
+    version: 'Version',
+
+    // Auth
+    login: 'Login',
+    sign_up: 'Sign Up',
+    continue_with_google: 'Continue with Google',
+    continue_with_phone: 'Continue with Phone',
+    or: 'or',
+    phone_number: 'Phone Number',
+    create_account: 'Create Account',
+    already_have_account: 'Already have an account?',
+
+    // Shop Setup
+    shop_setup: 'Shop Setup',
+    shop_name: 'Shop Name',
+    shop_name_placeholder: 'Your shop name',
+    contact_info: 'Contact Info',
+    contact_placeholder: 'Phone, Line ID, etc.',
+    promptpay_id: 'PromptPay ID',
+    promptpay_placeholder: 'Phone number or National ID',
+    complete_setup: 'Complete Setup',
+
+    // Alerts
+    line_not_installed: 'LINE Not Installed',
+    line_install_prompt: 'Would you like to install LINE or share via another app?',
+    install_line: 'Install LINE',
+    share_via_other: 'Share via Other',
+    saved_to_gallery: 'Receipt saved to gallery!',
+    permission_required: 'Permission Required',
+    gallery_permission: 'Please grant permission to save images to your gallery',
+    coming_soon: 'Coming Soon',
+    pro_coming_soon: 'Pro features will be available soon!',
+
+    // Stats
+    stats: 'Stats',
+    sales_today: "Today's Sales",
+    sales_this_week: "This Week's Sales",
+    transactions: 'Transactions',
+    best_sellers: 'Best Sellers',
+    top_5_items: 'Top 5 Items',
+    unlock_pro_stats: 'Unlock Pro Stats',
+    pro_stats_locked: 'Upgrade to Pro to unlock advanced analytics',
+    items_sold: 'sold',
+    revenue: 'revenue',
+    no_sales_yet: 'No sales yet',
+    start_selling: 'Create your first receipt to see stats',
+
+    // Export
+    export_for_tax: 'Export for Tax',
+    export_for_tax_desc: 'Download all receipts as CSV',
+    export_failed: 'Export failed. Please try again.',
+
+    // Success messages
+    receipt_created: 'Receipt Created!',
+    share_receipt: 'Share Receipt',
+
+    // Filters
+    filter_all: 'All',
+    filter_today: 'Today',
+    filter_week: 'This Week',
+    filter_month: 'This Month',
+
+    // Onboarding
+    onboarding_quick_title: 'Quick Sales',
+    onboarding_quick_desc: 'Create receipts in seconds with just a tap. Perfect for busy moments.',
+    onboarding_qr_title: 'PromptPay QR',
+    onboarding_qr_desc: 'Generate payment QR codes instantly. Get paid faster.',
+    onboarding_stats_title: 'Track Sales',
+    onboarding_stats_desc: 'See your daily, weekly, and monthly sales at a glance.',
+    skip: 'Skip',
+    next: 'Next',
+    get_started: 'Get Started',
+
+    // Help & Support
+    help_title: 'Help & Support',
+    faq: 'FAQ',
+    contact_us: 'Contact Us',
+    faq_create_receipt_q: 'How do I create a receipt?',
+    faq_create_receipt_a: 'Go to the Create tab, select items, add customer name if needed, then tap "Generate Receipt".',
+    faq_share_receipt_q: 'How do I share a receipt?',
+    faq_share_receipt_a: 'After creating a receipt, tap "Share to LINE" or "Save to Photos" to share with customers.',
+    faq_promptpay_q: 'How do I set up PromptPay?',
+    faq_promptpay_a: 'Go to Settings > PromptPay ID and enter your phone number or National ID. The QR code will appear on receipts.',
+    faq_export_q: 'How do I export my sales?',
+    faq_export_a: 'Go to Settings > Export for Tax. This downloads all your receipts as a CSV file for accounting.',
+    faq_pro_q: 'What does Pro include?',
+    faq_pro_a: 'Unlimited receipts (free is 30/month), advanced sales reports, and inventory management. ฿59/month.',
+    chat_on_line: 'Chat on LINE',
+    line_support_desc: 'AI assistant available 24/7',
+    email_us: 'Email the Developer',
+    email_support_desc: 'Direct contact for feedback',
+  },
+
+  th: {
+    // Common
+    app_name: 'BillSnap',
+    save: 'บันทึก',
+    cancel: 'ยกเลิก',
+    delete: 'ลบ',
+    edit: 'แก้ไข',
+    done: 'เสร็จ',
+    loading: 'กำลังโหลด...',
+    error: 'ข้อผิดพลาด',
+    success: 'สำเร็จ',
+    ok: 'ตกลง',
+
+    // Tabs
+    tab_home: 'หน้าหลัก',
+    tab_create: 'สร้างบิล',
+    tab_items: 'สินค้า',
+    tab_history: 'ประวัติ',
+    tab_stats: 'สถิติ',
+    tab_settings: 'ตั้งค่า',
+
+    // Items Management Screen
+    items_management: 'จัดการสินค้า',
+    search_items: 'ค้นหาสินค้า...',
+    add_item: 'เพิ่มสินค้า',
+    edit_item: 'แก้ไขสินค้า',
+    add_new_item: 'เพิ่มสินค้าใหม่',
+    item_name_required: 'ชื่อสินค้า *',
+    select_category: 'เลือกหมวดหมู่',
+    no_items_found: 'ไม่พบสินค้า',
+    no_items_in_category: 'ไม่มีสินค้าในหมวดหมู่นี้',
+    start_adding_items: 'เริ่มต้นเพิ่มสินค้าด้วยปุ่ม + ด้านล่าง',
+    confirm_delete: 'ยืนยันการลบ',
+    confirm_delete_item: 'ต้องการลบ "{name}" ใช่หรือไม่?',
+    error_enter_item_name: 'กรุณากรอกชื่อสินค้า',
+    all_categories: 'ทั้งหมด',
+
+    // Create Receipt Screen
+    create_receipt: 'สร้างบิลใหม่',
+    select_items: 'เลือกสินค้า',
+    receipt_items: 'รายการสินค้า',
+    additional_details: 'รายละเอียดเพิ่มเติม',
+    customer_name_optional: 'ชื่อลูกค้า (ไม่บังคับ)',
+    include_vat_7: 'รวม VAT 7%',
+    no_vat: 'ไม่รวม VAT',
+    subtotal: 'ยอดรวม',
+    grand_total: 'ยอดรวมทั้งสิ้น',
+    generate_receipt: 'สร้างใบเสร็จ',
+    clear_all_confirm: 'ต้องการล้างรายการสินค้าทั้งหมดหรือไม่?',
+    no_items_alert: 'ไม่มีรายการสินค้า',
+    add_items_first: 'กรุณาเพิ่มสินค้าก่อนสร้างใบเสร็จ',
+
+    // Categories (for display)
+    category_clothing: 'เสื้อผ้า',
+    category_bags: 'กระเป๋า',
+    category_accessories: 'เครื่องประดับ',
+    category_other: 'อื่นๆ',
+
+    // Additional items screen keys
+    error_enter_price: 'กรุณากรอกราคา',
+    try_different_search: 'ลองค้นหาด้วยคำอื่น',
+    item_name_placeholder: 'กรอกชื่อสินค้า',
+    price_baht_required: 'ราคา (฿) *',
+    category: 'หมวดหมู่',
+    summary: 'สรุปยอด',
+
+    // Search & Empty States
+    no_search_results: 'ไม่พบผลลัพธ์',
+
+    // New Receipt Screen (legacy - keeping for compatibility)
+    new_receipt: 'สร้างใบเสร็จ',
+    customer_name: 'ชื่อลูกค้า',
+    customer_name_placeholder: 'ไม่บังคับ',
+    item_name: 'ชื่อสินค้า',
+    price: 'ราคา',
+    quantity: 'จำนวน',
+    vat: 'VAT 7%',
+    total: 'ยอดรวม',
+    include_vat: 'รวม VAT',
+    clear_all: 'ล้างทั้งหมด',
+    no_items: 'ยังไม่มีรายการ',
+    add_first_item: 'แตะ + เพื่อเพิ่มรายการแรก',
+
+    // Customer display
+    guest_customer: 'ใบเสร็จ',
+
+    // Dashboard
+    greeting: 'สวัสดี! 👋',
+    today_sales: 'ยอดขายวันนี้',
+    orders: 'ออเดอร์',
+    monthly_overview: 'ภาพรวมเดือนนี้',
+    view_report: 'ดูรายงาน',
+    total_revenue: 'รายได้รวม',
+    receipt_count: 'จำนวนบิล',
+    avg_per_receipt: 'เฉลี่ย/บิล',
+    create_new_receipt: 'บิลใหม่',
+    manage_items: 'จัดการสินค้า',
+    recent_receipts: 'บิลล่าสุด',
+    view_all: 'ดูทั้งหมด',
+    create_first_receipt_hint: 'กดปุ่มด้านล่างเพื่อสร้างบิลแรก',
+    pro_features_short: 'บิลไม่จำกัด • รายงานขั้นสูง • จัดการสต็อก',
+    status_paid: 'ชำระแล้ว',
+    status_pending: 'รอชำระ',
+    status_refunded: 'คืนเงิน',
+    no_data_this_month: 'ยังไม่มีข้อมูลในเดือนนี้',
+    no_items_yet: 'ยังไม่มีรายการ',
+    add_items_hint: 'เพิ่มรายการจากแท็บสินค้าเพื่อเริ่มต้น',
+
+    // Receipt History
+    receipt_history: 'ประวัติใบเสร็จ',
+    today: 'วันนี้',
+    yesterday: 'เมื่อวาน',
+    this_week: 'สัปดาห์นี้',
+    this_month: 'เดือนนี้',
+    no_receipts: 'ยังไม่มีใบเสร็จ',
+    start_creating: 'เริ่มสร้างใบเสร็จเพื่อดูที่นี่',
+    search_receipts: 'ค้นหาใบเสร็จ...',
+    daily_sales: 'ยอดขายวันนี้',
+    receipts: 'ใบเสร็จ',
+
+    // Receipt Preview
+    receipt_preview: 'ตัวอย่างใบเสร็จ',
+    share_to_line: 'แชร์ไป LINE',
+    save_to_photos: 'บันทึกลงรูปภาพ',
+    remove_watermark: 'ลบลายน้ำ',
+    upgrade_pro_watermark: 'อัพเกรดเป็น Pro ฿99/เดือน เพื่อลบลายน้ำและปรับแต่งโลโก้',
+    get_pro: 'อัพเกรด Pro',
+    thank_you: 'ขอบคุณที่ใช้บริการ!',
+    scan_to_pay: 'สแกนเพื่อชำระเงิน',
+
+    // Settings
+    settings: 'ตั้งค่า',
+    shop_owner: 'เจ้าของร้าน',
+    member_since: 'สมาชิกตั้งแต่',
+    upgrade_to_pro: 'อัพเกรดเป็น Pro',
+    most_popular: 'ยอดนิยม',
+    pro_feature_1: 'ใบเสร็จไม่จำกัด',
+    pro_feature_2: 'รายงานและวิเคราะห์ขั้นสูง',
+    pro_feature_3: 'จัดการสต็อกสินค้า',
+    unlock_pro: 'ปลดล็อกฟีเจอร์ Pro',
+    shop_management: 'จัดการร้านค้า',
+    edit_shop_info: 'แก้ไขข้อมูลร้าน',
+    payment_promptpay: 'การชำระเงิน (พร้อมเพย์)',
+    account_preferences: 'บัญชี & การตั้งค่า',
+    subscription_status: 'สถานะสมาชิก',
+    free_plan: 'แพลนฟรี',
+    language: 'ภาษา',
+    help_support: 'ช่วยเหลือ & สนับสนุน',
+    sign_out: 'ออกจากระบบ',
+    sign_out_confirm: 'คุณต้องการออกจากระบบหรือไม่?',
+    version: 'เวอร์ชัน',
+
+    // Auth
+    login: 'เข้าสู่ระบบ',
+    sign_up: 'สมัครสมาชิก',
+    continue_with_google: 'ดำเนินการด้วย Google',
+    continue_with_phone: 'ดำเนินการด้วยโทรศัพท์',
+    or: 'หรือ',
+    phone_number: 'เบอร์โทรศัพท์',
+    create_account: 'สร้างบัญชี',
+    already_have_account: 'มีบัญชีแล้ว?',
+
+    // Shop Setup
+    shop_setup: 'ตั้งค่าร้านค้า',
+    shop_name: 'ชื่อร้าน',
+    shop_name_placeholder: 'ชื่อร้านของคุณ',
+    contact_info: 'ข้อมูลติดต่อ',
+    contact_placeholder: 'โทรศัพท์, Line ID, ฯลฯ',
+    promptpay_id: 'พร้อมเพย์ ID',
+    promptpay_placeholder: 'เบอร์โทร 10 หลัก เช่น 0812345678',
+    complete_setup: 'เสร็จสิ้นการตั้งค่า',
+
+    // Alerts
+    line_not_installed: 'ไม่ได้ติดตั้ง LINE',
+    line_install_prompt: 'คุณต้องการติดตั้ง LINE หรือแชร์ผ่านแอพอื่น?',
+    install_line: 'ติดตั้ง LINE',
+    share_via_other: 'แชร์ผ่านแอพอื่น',
+    saved_to_gallery: 'บันทึกใบเสร็จลงแกลเลอรี่แล้ว!',
+    permission_required: 'ต้องการสิทธิ์',
+    gallery_permission: 'กรุณาอนุญาตการบันทึกรูปภาพลงแกลเลอรี่',
+    coming_soon: 'เร็วๆ นี้',
+    pro_coming_soon: 'ฟีเจอร์ Pro จะพร้อมใช้งานเร็วๆ นี้!',
+
+    // Stats
+    stats: 'สถิติ',
+    sales_today: 'ยอดขายวันนี้',
+    sales_this_week: 'ยอดขายสัปดาห์นี้',
+    transactions: 'ธุรกรรม',
+    best_sellers: 'สินค้าขายดี',
+    top_5_items: '5 อันดับสินค้าขายดี',
+    unlock_pro_stats: 'ปลดล็อกสถิติ Pro',
+    pro_stats_locked: 'อัพเกรดเป็น Pro เพื่อปลดล็อกการวิเคราะห์ขั้นสูง',
+    items_sold: 'ขายแล้ว',
+    revenue: 'รายได้',
+    no_sales_yet: 'ยังไม่มียอดขาย',
+    start_selling: 'สร้างบิลแรกเพื่อดูสถิติ',
+
+    // Export
+    export_for_tax: 'ส่งออกสำหรับภาษี',
+    export_for_tax_desc: 'ดาวน์โหลดใบเสร็จทั้งหมดเป็น CSV',
+    export_failed: 'ส่งออกไม่สำเร็จ กรุณาลองใหม่',
+
+    // Success messages
+    receipt_created: 'สร้างใบเสร็จแล้ว!',
+    share_receipt: 'แชร์ใบเสร็จ',
+
+    // Filters
+    filter_all: 'ทั้งหมด',
+    filter_today: 'วันนี้',
+    filter_week: 'สัปดาห์นี้',
+    filter_month: 'เดือนนี้',
+
+    // Onboarding
+    onboarding_quick_title: 'ขายเร็ว',
+    onboarding_quick_desc: 'สร้างใบเสร็จภายในไม่กี่วินาที เหมาะสำหรับช่วงเวลาที่ยุ่ง',
+    onboarding_qr_title: 'QR พร้อมเพย์',
+    onboarding_qr_desc: 'สร้าง QR ชำระเงินทันที รับเงินเร็วขึ้น',
+    onboarding_stats_title: 'ติดตามยอดขาย',
+    onboarding_stats_desc: 'ดูยอดขายรายวัน รายสัปดาห์ และรายเดือนได้ทันที',
+    skip: 'ข้าม',
+    next: 'ถัดไป',
+    get_started: 'เริ่มต้นใช้งาน',
+
+    // Help & Support
+    help_title: 'ช่วยเหลือ & สนับสนุน',
+    faq: 'คำถามที่พบบ่อย',
+    contact_us: 'ติดต่อเรา',
+    faq_create_receipt_q: 'สร้างใบเสร็จอย่างไร?',
+    faq_create_receipt_a: 'ไปที่แท็บสร้างบิล เลือกสินค้า ใส่ชื่อลูกค้า (ถ้าต้องการ) แล้วกด "สร้างใบเสร็จ"',
+    faq_share_receipt_q: 'แชร์ใบเสร็จอย่างไร?',
+    faq_share_receipt_a: 'หลังสร้างใบเสร็จแล้ว กด "แชร์ไป LINE" หรือ "บันทึกลงรูปภาพ" เพื่อส่งให้ลูกค้า',
+    faq_promptpay_q: 'ตั้งค่าพร้อมเพย์อย่างไร?',
+    faq_promptpay_a: 'ไปที่ตั้งค่า > พร้อมเพย์ ID แล้วใส่เบอร์โทร 10 หลัก QR จะแสดงในใบเสร็จ',
+    faq_export_q: 'ส่งออกยอดขายอย่างไร?',
+    faq_export_a: 'ไปที่ตั้งค่า > ส่งออกสำหรับภาษี จะดาวน์โหลดใบเสร็จทั้งหมดเป็นไฟล์ CSV',
+    faq_pro_q: 'Pro มีอะไรบ้าง?',
+    faq_pro_a: 'สร้างใบเสร็จไม่จำกัด (ฟรี 30/เดือน) รายงานยอดขายขั้นสูง และจัดการสต็อก ฿59/เดือน',
+    chat_on_line: 'แชทผ่าน LINE',
+    line_support_desc: 'AI ช่วยเหลือ 24 ชั่วโมง',
+    email_us: 'อีเมลหาผู้พัฒนา',
+    email_support_desc: 'ติดต่อโดยตรงสำหรับ feedback',
+  },
+} as const;
+
+export type TranslationKey = keyof typeof translations.en;

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings &amp; Subscription</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-[480px] mx-auto bg-white dark:bg-background-dark shadow-xl">
+<!-- TopAppBar -->
+<div class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-100 dark:border-gray-800">
+<div class="text-[#111813] dark:text-white flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined cursor-pointer">arrow_back_ios</span>
+</div>
+<h2 class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Settings</h2>
+</div>
+<div class="flex flex-col gap-2">
+<!-- ProfileHeader -->
+<div class="flex p-4 @container">
+<div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+<div class="flex gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-[80px] w-[80px] border-2 border-primary/20" data-alt="Modern Thai restaurant logo with green elements" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyeDkB-gKnV6tfcOPccvdRiet-S7srNmILj7SP9VDbHP_Hw-vM0bSCa0vy9iQcQvIh0KOlq6CPPbCMwYkdV-Hfoez8YYDtCMrF9PWGuiPzgjKEMv7RBwmM1JROrkqTBjkyLAlaisqN4_WirK-uh1R5wCBiJiFmrEDxXlgH3eb3m0HABjnukuSDSusJHvGZIDRkehc5u_2y2NNstgNSK0eR2QFM-LyaMb9SBcvZepPOe7tc2EYa_YechzVV72nzaXY2J0XDme5KKbA");'>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Krua Thai Shop</p>
+<p class="text-[#61896f] dark:text-primary/80 text-base font-medium leading-normal">Shop Owner</p>
+<p class="text-[#61896f] dark:text-gray-400 text-sm font-normal leading-normal">Member since Oct 2023</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Pro Upgrade Card -->
+<div class="px-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-md bg-white dark:bg-gray-900 border border-primary/10 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-[21/9] bg-cover" data-alt="Vibrant abstract green gradient background" style="background-image: linear-gradient(135deg, #13ec5b 0%, #0fa341 100%);">
+<div class="flex h-full items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl">auto_awesome</span>
+</div>
+</div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 py-4 px-4">
+<div class="flex justify-between items-start">
+<p class="text-[#111813] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">Upgrade to Pro</p>
+<span class="bg-primary/20 text-primary text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Most Popular</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<p class="text-[#61896f] dark:text-gray-300 text-sm font-normal leading-normal">Remove "Made with ThaiReceipt" Watermark</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<p class="text-[#61896f] dark:text-gray-300 text-sm font-normal leading-normal">Unlimited Receipts &amp; Sales Tracking</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<p class="text-[#61896f] dark:text-gray-300 text-sm font-normal leading-normal">Custom PDF Exports &amp; Branding</p>
+</div>
+</div>
+<button class="mt-2 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-primary text-[#111813] text-base font-bold leading-normal transition-transform active:scale-[0.98]">
+<span class="truncate">Unlock Pro Features</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SectionHeader: Shop -->
+<h3 class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Shop Management</h3>
+<!-- List Items -->
+<div class="flex flex-col">
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-50 dark:border-gray-800 cursor-pointer active:bg-gray-50 dark:active:bg-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<p class="text-[#111813] dark:text-white text-base font-medium leading-normal flex-1 truncate">Edit Shop Info</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-50 dark:border-gray-800 cursor-pointer active:bg-gray-50 dark:active:bg-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined">qr_code_2</span>
+</div>
+<p class="text-[#111813] dark:text-white text-base font-medium leading-normal flex-1 truncate">Payment (PromptPay QR)</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-50 dark:border-gray-800 cursor-pointer active:bg-gray-50 dark:active:bg-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<p class="text-[#111813] dark:text-white text-base font-medium leading-normal flex-1 truncate">Receipt History</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SectionHeader: Account -->
+<h3 class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Account &amp; Preferences</h3>
+<div class="flex flex-col">
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-50 dark:border-gray-800 cursor-pointer active:bg-gray-50 dark:active:bg-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined">credit_card</span>
+</div>
+<div class="flex flex-col">
+<p class="text-[#111813] dark:text-white text-base font-medium leading-normal truncate">Subscription Status</p>
+<p class="text-[#61896f] dark:text-gray-400 text-xs font-normal leading-normal">Free Plan</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-50 dark:border-gray-800 cursor-pointer active:bg-gray-50 dark:active:bg-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined">language</span>
+</div>
+<div class="flex flex-col">
+<p class="text-[#111813] dark:text-white text-base font-medium leading-normal truncate">Language / ภาษา</p>
+<p class="text-[#61896f] dark:text-gray-400 text-xs font-normal leading-normal">English</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">translate</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-50 dark:border-gray-800 cursor-pointer active:bg-gray-50 dark:active:bg-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined">help</span>
+</div>
+<p class="text-[#111813] dark:text-white text-base font-medium leading-normal flex-1 truncate">Help &amp; Support</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Logout Section -->
+<div class="p-8 flex flex-col items-center gap-4">
+<button class="w-full h-12 flex items-center justify-center rounded-xl bg-red-50 dark:bg-red-950/20 text-red-600 dark:text-red-400 font-semibold border border-red-100 dark:border-red-900 active:bg-red-100 transition-colors">
+<span class="material-symbols-outlined mr-2">logout</span>
+                    Sign Out
+                </button>
+<div class="text-center">
+<p class="text-gray-400 text-xs">Version 2.4.0 (Build 82)</p>
+<p class="text-gray-400 text-[10px] mt-1 uppercase tracking-widest">Thai Receipt Generator</p>
+</div>
+</div>
+</div>
+<!-- Bottom Tab Spacer (iOS Safe Area) -->
+<div class="h-20 bg-white dark:bg-background-dark"></div>
+</div>
+</body></html>

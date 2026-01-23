@@ -1,0 +1,68 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e8]:
+  - generic [ref=e16]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: Hello! 👋
+      - generic [ref=e20]: My Shop
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e25]: 
+        - generic [ref=e26]: Today's Sales
+      - generic [ref=e27]: ฿0.00
+      - generic [ref=e28]: 0 orders
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: This Week
+          - generic [ref=e33]: ฿0.00
+        - generic [ref=e35]:
+          - generic [ref=e36]: This Month
+          - generic [ref=e37]: ฿0.00
+    - generic [ref=e38]:
+      - generic [ref=e40] [cursor=pointer]:
+        - generic [ref=e42]: 
+        - generic [ref=e43]: Quick Sale
+      - generic [ref=e45] [cursor=pointer]:
+        - generic [ref=e47]: 
+        - generic [ref=e48]: Create
+      - generic [ref=e50] [cursor=pointer]:
+        - generic [ref=e52]: 
+        - generic [ref=e53]: Items
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]: Recent Receipts
+        - generic [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: View All
+          - generic [ref=e59]: 
+      - generic [ref=e61]:
+        - generic [ref=e63]: 
+        - generic [ref=e64]: No receipts yet
+        - generic [ref=e65]: Press the button below to create your first receipt
+  - tablist [ref=e68]:
+    - tab "  Home" [selected] [ref=e70] [cursor=pointer]:
+      - generic [ref=e71]:
+        - generic [ref=e73]: 
+        - generic [ref=e75]: 
+      - generic [ref=e76]: Home
+    - tab "  Create" [ref=e78] [cursor=pointer]:
+      - generic [ref=e79]:
+        - generic [ref=e81]: 
+        - generic [ref=e83]: 
+      - generic [ref=e84]: Create
+    - tab "  Items" [ref=e86] [cursor=pointer]:
+      - generic [ref=e87]:
+        - generic [ref=e89]: 
+        - generic [ref=e91]: 
+      - generic [ref=e92]: Items
+    - tab "  History" [ref=e94] [cursor=pointer]:
+      - generic [ref=e95]:
+        - generic [ref=e97]: 
+        - generic [ref=e99]: 
+      - generic [ref=e100]: History
+    - tab "  Settings" [ref=e102] [cursor=pointer]:
+      - generic [ref=e103]:
+        - generic [ref=e105]: 
+        - generic [ref=e107]: 
+      - generic [ref=e108]: Settings
+```

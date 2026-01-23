@@ -1,0 +1,9 @@
+# Add your actual google-services.json from Firebase Console
+# Download from: https://console.firebase.google.com/
+# This is a placeholder - replace with your real config
+{
+  "project_info": {
+    "project_id": "your-project-id"
+  },
+  "client": []
+}

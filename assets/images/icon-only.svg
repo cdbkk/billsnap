@@ -1,0 +1,23 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Green background -->
+  <rect width="512" height="512" rx="108" fill="#00A86B"/>
+
+  <!-- Phone body - centered without text -->
+  <rect x="168" y="100" width="176" height="312" rx="24" fill="none" stroke="white" stroke-width="14"/>
+
+  <!-- Receipt on screen with smooth wavy edges -->
+  <path d="M196 136
+           Q206 126 216 136 Q226 146 236 136 Q246 126 256 136 Q266 146 276 136 Q286 126 296 136 Q306 146 316 136
+           V340
+           Q306 350 296 340 Q286 330 276 340 Q266 350 256 340 Q246 330 236 340 Q226 350 216 340 Q206 330 196 340
+           Z"
+        fill="white"/>
+
+  <!-- Receipt lines - clean and even -->
+  <line x1="212" y1="192" x2="300" y2="192" stroke="#00A86B" stroke-width="10" stroke-linecap="round"/>
+  <line x1="212" y1="228" x2="284" y2="228" stroke="#00A86B" stroke-width="10" stroke-linecap="round"/>
+  <line x1="212" y1="264" x2="268" y2="264" stroke="#00A86B" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Home button -->
+  <circle cx="256" cy="384" r="14" fill="none" stroke="white" stroke-width="6"/>
+</svg>

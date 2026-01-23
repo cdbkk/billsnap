@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Receipt Preview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#13ec5b",
+                "background-light": "#f6f8f6",
+                "background-dark": "#102216",
+              },
+              fontFamily: {
+                "display": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .receipt-paper {
+            background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
+            background-size: 4px 4px;
+        }
+        .jagged-edge {
+            clip-path: polygon(0% 0%, 5% 2%, 10% 0%, 15% 2%, 20% 0%, 25% 2%, 30% 0%, 35% 2%, 40% 0%, 45% 2%, 50% 0%, 55% 2%, 60% 0%, 65% 2%, 70% 0%, 75% 2%, 80% 0%, 85% 2%, 90% 0%, 95% 2%, 100% 0%, 100% 100%, 95% 98%, 90% 100%, 85% 98%, 80% 100%, 75% 98%, 70% 100%, 65% 98%, 60% 100%, 55% 98%, 50% 100%, 45% 98%, 40% 100%, 35% 98%, 30% 100%, 25% 98%, 20% 100%, 15% 98%, 10% 100%, 5% 98%, 0% 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-10 flex items-center bg-white dark:bg-background-dark p-4 border-b border-[#f0f4f2] dark:border-white/10 justify-between">
+<div aria-label="Go back" class="text-[#111813] dark:text-white flex size-10 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Receipt Preview</h2>
+<div class="size-10"></div> <!-- Spacer for centering -->
+</header>
+<main class="flex-1 overflow-y-auto px-6 py-8 flex flex-col items-center gap-8">
+<!-- Virtual Receipt Preview -->
+<div class="relative w-full max-w-sm">
+<!-- Receipt Card -->
+<div class="receipt-paper jagged-edge bg-white p-8 shadow-xl flex flex-col gap-6 text-[#111813]">
+<!-- Shop Logo & Info -->
+<div class="flex flex-col items-center text-center gap-2">
+<div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-2 overflow-hidden border border-gray-100">
+<div class="w-full h-full bg-cover bg-center" data-alt="Modern shop logo circle minimalist" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYAwGvW61KwRmSGhfBFWVV0iIjnkdtP_Os5Q-iMMBh2IIEDGqmqgKk_13te23VJJFFg__wVE-Ww1zaFENfbCSZ6IWhmyf3MchaZC_Tp7-0Cwx5P3uXFptOTSTvaJs5j99Z6VRlfyHXCczYz-MszUM2eYJITnYDj3JG8wAiWqFk3-lGmE8mMcxGA7f1rMevcl2nKqymb3QCYig9hw9c99E4UseH-2xBbdPAV1DCQAJjmyJrRaVdbQAyYu4Y97iQKDmGC8DSEUzcN7U')"></div>
+</div>
+<h1 class="text-xl font-bold uppercase tracking-wider">Araya Boutique</h1>
+<p class="text-xs text-gray-500">Siam Square, Bangkok, Thailand<br/>Tel: +66 81 234 5678</p>
+</div>
+<!-- Divider -->
+<div class="border-b border-dashed border-gray-300 w-full"></div>
+<!-- Receipt Details -->
+<div class="flex justify-between text-xs font-medium">
+<span>Receipt #ORD-2023-1024</span>
+<span>24 Oct 2023 14:35</span>
+</div>
+<!-- Line Items -->
+<div class="flex flex-col gap-3">
+<div class="flex justify-between text-sm">
+<span class="flex-1">Cotton Summer Dress (M)</span>
+<span class="w-12 text-center">x1</span>
+<span class="w-20 text-right">฿850.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="flex-1">Handmade Silk Scarf</span>
+<span class="w-12 text-center">x2</span>
+<span class="w-20 text-right">฿600.00</span>
+</div>
+</div>
+<!-- Divider -->
+<div class="border-b border-dashed border-gray-300 w-full"></div>
+<!-- Totals -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm">
+<span>Subtotal</span>
+<span>฿1,450.00</span>
+</div>
+<div class="flex justify-between text-sm text-red-500">
+<span>Discount (Promo: SALE10)</span>
+<span>-฿145.00</span>
+</div>
+<div class="flex justify-between text-lg font-bold mt-2 pt-2 border-t border-gray-100">
+<span>Total Amount</span>
+<span class="text-[#13ec5b]">฿1,305.00</span>
+</div>
+</div>
+<!-- QR Code Section -->
+<div class="flex flex-col items-center gap-3 mt-4">
+<p class="text-[10px] font-bold text-blue-800 uppercase tracking-widest bg-blue-50 px-2 py-0.5 rounded">PromptPay</p>
+<div class="p-2 border-2 border-gray-100 rounded-lg">
+<div class="w-32 h-32 bg-center bg-no-repeat bg-contain" data-alt="Thai PromptPay payment QR code" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfBloGX3rxfz6PiM6l7aPyKyItDlQK5r7J_cQslE5ufeseq8f-cseP_bgDwIGGnTu1KTjBtmFxadAl5ywFIK-WX59Pbon1beZWZ9p7rkIXDhMWdNMsg3ak3LKVq1wQpweMGW0zer3xZ9WcDbDpAZPAsSY91D6aIHonrJKeKDaL5WjCYbeLNuQ5a645y8rs2--Q813wXU7FKumLQirTOedrGmMq0ns0hUf-sB1z1l6oav1WeyAKo9Gajj4A3Dm4r61vH6Kr0iiZB-U");'></div>
+</div>
+<p class="text-[10px] text-gray-400">Scan to pay directly to merchant</p>
+</div>
+<div class="text-center mt-4">
+<p class="text-[10px] text-gray-400 italic">Thank you for shopping with us!</p>
+</div>
+</div>
+<!-- Free Version Watermark Overlay -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
+<div class="rotate-45 text-black/5 text-4xl font-bold whitespace-nowrap uppercase tracking-[1em] select-none">
+                    FREE VERSION • FREE VERSION • FREE VERSION
+                </div>
+</div>
+</div>
+<!-- Upsell Banner -->
+<div class="w-full max-w-[480px]">
+<div class="flex flex-col items-start justify-between gap-4 rounded-xl border border-[#dbe6df] bg-white dark:bg-white/5 dark:border-white/10 p-5 @[480px]:flex-row @[480px]:items-center">
+<div class="flex flex-col gap-1">
+<p class="text-[#111813] dark:text-white text-base font-bold leading-tight">Remove Watermark</p>
+<p class="text-[#61896f] dark:text-gray-400 text-sm font-normal leading-normal">Upgrade to Pro for ฿99/mo to remove the watermark and customize your logo.</p>
+</div>
+<a class="text-sm font-bold leading-normal tracking-[0.015em] flex items-center gap-2 text-[#111813] dark:text-primary whitespace-nowrap" href="#">
+                    Get Pro
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</main>
+<!-- Bottom Action Panel (iOS Style) -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#f0f4f2] dark:border-white/10 p-4 pb-8">
+<div class="flex flex-col gap-3 max-w-[480px] mx-auto">
+<button class="flex items-center justify-center gap-3 rounded-xl h-14 bg-primary text-[#111813] text-base font-bold w-full active:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">send</span>
+<span class="truncate">Share to LINE</span>
+</button>
+<button class="flex items-center justify-center gap-3 rounded-xl h-14 bg-[#f0f4f2] dark:bg-white/10 text-[#111813] dark:text-white text-base font-bold w-full active:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">download</span>
+<span class="truncate">Save to Photos</span>
+</button>
+</div>
+</footer>
+<!-- Bottom Navigation Bar (Contextual) -->
+<div class="flex gap-2 border-t border-[#f0f4f2] dark:border-white/10 bg-white dark:bg-background-dark px-4 pb-4 pt-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#61896f]" href="#">
+<span class="material-symbols-outlined">history</span>
+<p class="text-xs font-medium">History</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#61896f]" href="#">
+<span class="material-symbols-outlined">group</span>
+<p class="text-xs font-medium">Customers</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#61896f]" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-xs font-medium">Settings</p>
+</a>
+</div>
+</body></html>

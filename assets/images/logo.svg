@@ -1,0 +1,26 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Green background -->
+  <rect width="512" height="512" rx="108" fill="#00A86B"/>
+
+  <!-- Phone body - clean rounded rectangle -->
+  <rect x="168" y="56" width="176" height="312" rx="24" fill="none" stroke="white" stroke-width="14"/>
+
+  <!-- Receipt on screen with smooth wavy edges -->
+  <path d="M196 92
+           Q206 82 216 92 Q226 102 236 92 Q246 82 256 92 Q266 102 276 92 Q286 82 296 92 Q306 102 316 92
+           V296
+           Q306 306 296 296 Q286 286 276 296 Q266 306 256 296 Q246 286 236 296 Q226 306 216 296 Q206 286 196 296
+           Z"
+        fill="white"/>
+
+  <!-- Receipt lines - clean and even -->
+  <line x1="212" y1="148" x2="300" y2="148" stroke="#00A86B" stroke-width="10" stroke-linecap="round"/>
+  <line x1="212" y1="184" x2="284" y2="184" stroke="#00A86B" stroke-width="10" stroke-linecap="round"/>
+  <line x1="212" y1="220" x2="268" y2="220" stroke="#00A86B" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Home button - small and subtle -->
+  <circle cx="256" cy="340" r="14" fill="none" stroke="white" stroke-width="6"/>
+
+  <!-- BillSnap text -->
+  <text x="256" y="432" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="56" font-weight="600">BillSnap</text>
+</svg>
