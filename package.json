@@ -1,6 +1,11 @@
 {
   "name": "billsnap",
   "version": "1.0.0",
+  "author": "cdbkk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdbkk/billsnap.git"
+  },
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
